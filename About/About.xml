@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Crypto Bionics</name>
+  <author>CatLover366</author>
+  <packageId>CatLover366.CryptoBionics</packageId>
+  <supportedVersions>
+    <li>1.4</li>
+  </supportedVersions>
+  <description>Some variations of regular Bionics, with focus on fire, plasma and generally a doomlike hell theme.</description>
+  <modDependencies>
+    <li>
+      <packageId>Smartkar.AthenaFramework</packageId>
+      <displayName>Athena Framework</displayName>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+    <li>Smartkar.AthenaFramework</li>
+  </loadAfter>
+</ModMetaData>
