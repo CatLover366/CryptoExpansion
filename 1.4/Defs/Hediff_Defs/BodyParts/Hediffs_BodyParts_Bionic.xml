@@ -77,6 +77,13 @@
         </statOffsets>
       </li>
     </stages>
+    <comps>
+      <li Class="AthenaFramework.HediffCompProperties_GiveSingularAbility">
+          <abilityDefs>
+            <li>CB_IceWallRaise</li>
+          </abilityDefs> 
+      </li>
+    </comps>
     <eyeGraphicSouth>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>Things/Pawn/Wounds/BionicEye_south</texPath>
