@@ -32,7 +32,6 @@
 		<defName>CB_IceWallRaise</defName>
 		<label>icewall</label>
 		<description>Form a temporary wall of ice around the target location.</description>
-		<level>4</level>
 		<iconPath>UI/Abilities/Wallraise</iconPath>
 		<writeCombatLog>True</writeCombatLog>
 		<hotKey>Misc10</hotKey>
@@ -52,11 +51,22 @@
 			<wallDef>CB_Icewall</wallDef>
 			<puffColor>(0, 0, 0)</puffColor>
 			<pattern>
-			  <li>(0, 0)</li>
-			  <li>(1, 0)</li>
-			  <li>(-1, 0)</li>
-			  <li>(0, 1)</li>
-			  <li>(0, -1)</li>
+			  <li>(2, 0)</li>
+			  <li>(2, 1)</li>
+			  <li>(2, -1)</li>
+			  <li>(-2, 0)</li>
+			  <li>(-2, 1)</li>
+			  <li>(-2, -1)</li>
+			  <li>(0, 2)</li>
+			  <li>(1, 2)</li>
+			  <li>(-1, 2)</li>
+			  <li>(0, -2)</li>
+			  <li>(1, -2)</li>
+			  <li>(-1, -2)</li>
+			  <li>(1, 1)</li>
+			  <li>(1, -1)</li>
+			  <li>(-1, 1)</li>
+			  <li>(-1, -1)</li>
 			</pattern>
 			<screenShakeIntensity>1.0</screenShakeIntensity>
 			<clamorType>Ability</clamorType>
@@ -79,5 +89,35 @@
 		  </li>
 		</comps>
 	</AbilityDef>
+
+    <AbilityDef>
+        <defName>CB_CryptoClot</defName>
+        <label>cryolize</label>
+        <description>Infernal mechanites accumulate their stored plasma in the mouth of the user, expelling it in a fiery blast.</description>
+        <iconPath>UI/Abilities/Infernal_breath</iconPath>
+        <cooldownTicksRange>20000</cooldownTicksRange>
+        <aiCanUse>true</aiCanUse>
+        <warmupStartSound>HB_InfernalBreath_Warmup</warmupStartSound>
+    <showWhenDrafted>true</showWhenDrafted>
+    <statBases>
+      <Ability_Duration>1000</Ability_Duration>
+    </statBases>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <range>8.5</range>
+            <warmupTime>1</warmupTime>
+            <soundCast>HB_InfernalBreath_Resolve</soundCast>
+            <targetParams>
+        <canTargetSelf>True</canTargetSelf>
+        <canTargetAnimals>True</canTargetAnimals>
+            </targetParams>
+        </verbProperties>
+    <comps>
+      <li Class = "CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>CB_CryptoClot</hediffDef>
+      </li>
+    </comps>
+    </AbilityDef>
 
 </Defs>
