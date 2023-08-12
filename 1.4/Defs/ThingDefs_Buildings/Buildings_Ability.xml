@@ -22,9 +22,6 @@
 				<lifespanTicks>10000</lifespanTicks>
 				<expireEffect>RaisedRock_Collapse</expireEffect>
 			</li>
-			<li Class="CompProperties">
-				<compClass>CryptoExpansion.CompAssociated</compClass>
-			</li>
 		</comps>
 	</ThingDef>
 
