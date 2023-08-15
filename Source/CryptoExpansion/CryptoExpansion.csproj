@@ -14,8 +14,8 @@
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>false</DebugSymbols>
-    <DebugType>none</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>..\..\1.4\Assemblies\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
@@ -23,7 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
+    <DebugType>none</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
@@ -49,10 +49,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CompAssociated.cs" />
-    <Compile Include="CompAbilityEffect_Wallraise_General.cs" />
-    <Compile Include="CompProperties_AbilityWallraise_General.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="**/*.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../.gitignore" />
+    <None Include="../../.gitattributes" />
+    <None Include="../../.editorconfig" />
+    <AboutFiles Include="../../About/*" />
+    <ReleaseFiles Include="..\..\1.*\**" Exclude="..\..\1.*\Assemblies\*.pdb" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

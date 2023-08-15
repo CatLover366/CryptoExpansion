@@ -1,21 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using RimWorld;
-using Verse;
+﻿using Verse;
 
 namespace CryptoExpansion
 {
-    public class CompAssociated : ThingComp
+  public class CompAssociated : ThingComp
+  {
+    public override void PostExposeData()
     {
-        public override void PostExposeData()
-        {
-            Scribe_References.Look(ref pawn, "pawn");
-        }
-
-        public Pawn pawn;
-
+      Scribe_References.Look(ref pawn, "pawn");
     }
+
+    public Pawn pawn;
+  }
 }
