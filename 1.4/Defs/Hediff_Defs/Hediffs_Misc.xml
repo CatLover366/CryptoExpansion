@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <Defs>
 
   <HediffDef>
@@ -13,7 +14,7 @@
         <showRemainingTime>false</showRemainingTime>
         <disappearsAfterTicks>1000~1200</disappearsAfterTicks>
       </li>
-      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+      <li Class="HediffCompProperties_DisappearsOnDeath" />
       <li Class="HediffCompProperties_ApplyDamagePeriodically">
         <damageDef>Frostbite</damageDef>
         <mtbDamage>100</mtbDamage>
@@ -43,7 +44,7 @@
         <showRemainingTime>false</showRemainingTime>
         <disappearsAfterTicks>5000~7500</disappearsAfterTicks>
       </li>
-      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+      <li Class="HediffCompProperties_DisappearsOnDeath" />
     </comps>
     <stages>
       <li>

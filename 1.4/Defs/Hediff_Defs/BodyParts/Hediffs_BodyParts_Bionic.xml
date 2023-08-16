@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <Defs>
 
   <MVCF.ModDef>
@@ -7,7 +8,7 @@
     <description>All features will be enabled if this def is included.</description>
     <ActivateFeatures>
       <li>IntegratedToggle</li>
-      <li>HediffVerbs</li>	
+      <li>HediffVerbs</li>
       <li>RangedAnimals</li>
     </ActivateFeatures>
   </MVCF.ModDef>
@@ -55,7 +56,9 @@
     <label>crypto eye</label>
     <labelNoun>a crypto eye</labelNoun>
     <description>An installed crypto eye.</description>
-    <descriptionHyperlinks><ThingDef>CB_CryptonicEye</ThingDef></descriptionHyperlinks>
+    <descriptionHyperlinks>
+      <ThingDef>CB_CryptonicEye</ThingDef>
+    </descriptionHyperlinks>
     <spawnThingOnRemoved>CB_CryptonicEye</spawnThingOnRemoved>
     <woundAnchorRange>0</woundAnchorRange>
     <displayWound>true</displayWound>
@@ -79,9 +82,9 @@
     </stages>
     <comps>
       <li Class="AthenaFramework.HediffCompProperties_GiveSingularAbility">
-          <abilityDefs>
-            <li>CB_IceWallRaise</li>
-          </abilityDefs> 
+        <abilityDefs>
+          <li>CB_IceWallRaise</li>
+        </abilityDefs>
       </li>
     </comps>
     <eyeGraphicSouth>
@@ -99,12 +102,16 @@
     <defName>CB_CryptonicEye</defName>
     <label>crypto eye</label>
     <description>An advanced artificial eye. With its biogel nerve-link, internal signal pre-processor, and wide-spectrum sensors, it is better than a biological eye in almost every way. A lattice-dust healing system allows it to recover from damage.</description>
-    <descriptionHyperlinks><RecipeDef>CB_InstallCryptonicEye</RecipeDef></descriptionHyperlinks>
+    <descriptionHyperlinks>
+      <RecipeDef>CB_InstallCryptonicEye</RecipeDef>
+    </descriptionHyperlinks>
     <costList>
       <Plasteel>15</Plasteel>
       <ComponentSpacer>4</ComponentSpacer>
     </costList>
-    <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
     <statBases>
       <Mass>0.3</Mass>
     </statBases>
@@ -147,7 +154,9 @@
     <label>crypto arm</label>
     <labelNoun>a crypto arm</labelNoun>
     <description>An installed crypto arm.</description>
-    <descriptionHyperlinks><ThingDef>CB_CryptonicArm</ThingDef></descriptionHyperlinks>
+    <descriptionHyperlinks>
+      <ThingDef>CB_CryptonicArm</ThingDef>
+    </descriptionHyperlinks>
     <comps>
       <li Class="HediffCompProperties_VerbGiver">
         <tools>
@@ -162,20 +171,20 @@
             <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
             <soundMeleeHit>Pawn_Melee_PowerClaw_Hit</soundMeleeHit>
             <soundMeleeMiss>Pawn_Melee_PowerClaw_Miss</soundMeleeMiss>
-              <extraMeleeDamages>
-                <li>
-                  <def>Frostbite</def>
-                  <amount>5</amount>
-                  <chance>100</chance>
-                </li>
-              </extraMeleeDamages>
+            <extraMeleeDamages>
+              <li>
+                <def>Frostbite</def>
+                <amount>5</amount>
+                <chance>100</chance>
+              </li>
+            </extraMeleeDamages>
           </li>
         </tools>
       </li>
       <li Class="AthenaFramework.HediffCompProperties_GiveSingularAbility">
-          <abilityDefs>
-            <li>CB_CryptoClot</li>
-          </abilityDefs> 
+        <abilityDefs>
+          <li>CB_CryptoClot</li>
+        </abilityDefs>
       </li>
     </comps>
     <spawnThingOnRemoved>CB_CryptonicArm</spawnThingOnRemoved>
@@ -203,12 +212,16 @@
     <defName>CB_CryptonicArm</defName>
     <label>crypto arm</label>
     <description>An advanced artificial arm. Silenced mini-servos give great strength, while the biogel nerve-link gives exquisite control. A lattice-dust healing system allows it to recover from damage. It is better than a biological arm in almost every way.</description>
-    <descriptionHyperlinks><RecipeDef>CB_InstallCryptonicArm</RecipeDef></descriptionHyperlinks>
+    <descriptionHyperlinks>
+      <RecipeDef>CB_InstallCryptonicArm</RecipeDef>
+    </descriptionHyperlinks>
     <costList>
       <Plasteel>15</Plasteel>
       <ComponentSpacer>4</ComponentSpacer>
     </costList>
-    <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
     <statBases>
       <Mass>5</Mass>
     </statBases>
@@ -251,50 +264,58 @@
     <label>crypto leg</label>
     <labelNoun>a crypto leg</labelNoun>
     <description>An installed crypto leg.</description>
-    <descriptionHyperlinks><ThingDef>CB_CryptonicLeg</ThingDef></descriptionHyperlinks>
+    <descriptionHyperlinks>
+      <ThingDef>CB_CryptonicLeg</ThingDef>
+    </descriptionHyperlinks>
     <spawnThingOnRemoved>CB_CryptonicLeg</spawnThingOnRemoved>
     <addedPartProps>
       <solid>true</solid>
       <partEfficiency>1.0</partEfficiency>
       <betterThanNatural>true</betterThanNatural>
     </addedPartProps>
-  <comps>
-    <li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
-      <verbs>
-        <li>
-          <verbClass>Verb_Jump</verbClass>
-          <label>crypto jump</label>
-          <violent>false</violent>
-          <hasStandardCommand>true</hasStandardCommand>
-          <onlyManualCast>True</onlyManualCast>
-          <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
-          <warmupTime>0.5</warmupTime>
-          <range>21.9</range>
-          <warmupEffecter>JumpWarmupEffect</warmupEffecter>
-          <requireLineOfSight>true</requireLineOfSight>
-          <flightEffecterDef>JumpFlightEffect</flightEffecterDef>
-          <soundLanding>JumpPackLand</soundLanding>
-          <targetParams>
-            <canTargetLocations>true</canTargetLocations>
-            <canTargetPawns>false</canTargetPawns>
-            <canTargetBuildings>false</canTargetBuildings>
-          </targetParams>
+    <comps>
+      <li Class="CryptoExpansion.HediffCompProperties_JumpEntropy">
+        <compClass>CryptoExpansion.HediffComp_JumpEntropy</compClass>
+        <radius>5.0</radius>
+        <damType>Bomb</damType>
+        <excludeRadius>1.0</excludeRadius>
+      </li>
+      <li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
+        <verbs>
+          <li>
+            <verbClass>CryptoExpansion.Verb_PowerJump</verbClass>
+            <label>crypto jump</label>
+            <violent>false</violent>
+            <hasStandardCommand>true</hasStandardCommand>
+            <onlyManualCast>True</onlyManualCast>
+            <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+            <warmupTime>0.5</warmupTime>
+            <range>21.9</range>
+            <warmupEffecter>JumpWarmupEffect</warmupEffecter>
+            <requireLineOfSight>true</requireLineOfSight>
+            <flightEffecterDef>JumpFlightEffect</flightEffecterDef>
+            <soundLanding>JumpPackLand</soundLanding>
+            <targetParams>
+              <canTargetLocations>true</canTargetLocations>
+              <canTargetPawns>false</canTargetPawns>
+              <canTargetBuildings>false</canTargetBuildings>
+            </targetParams>
           </li>
-      </verbs>
-      <verbProps>
-        <li>
-          <label>crypto jump</label>
-          <canBeToggled>true</canBeToggled>
-          <comps>
-            <li Class="MVCF.VerbComps.VerbCompProperties_Cooldown">
-              <compClass>MVCF.VerbComps.VerbComp_Cooldown</compClass>
-              <cooldownTime>10</cooldownTime>
-            </li>
-          </comps>
-        </li>
-      </verbProps>
-    </li>
-  </comps>
+        </verbs>
+        <verbProps>
+          <li>
+            <label>crypto jump</label>
+            <canBeToggled>true</canBeToggled>
+            <comps>
+              <li Class="MVCF.VerbComps.VerbCompProperties_Cooldown">
+                <compClass>MVCF.VerbComps.VerbComp_Cooldown</compClass>
+                <cooldownTime>10</cooldownTime>
+              </li>
+            </comps>
+          </li>
+        </verbProps>
+      </li>
+    </comps>
     <stages>
       <li>
         <statFactors>
@@ -314,12 +335,16 @@
     <defName>CB_CryptonicLeg</defName>
     <label>crypto leg</label>
     <description>An advanced artificial leg. With its biogel nerve-link, powerful mini-servos, and lattice-dust healing system, it is better than a biological leg in almost every way.</description>
-    <descriptionHyperlinks><RecipeDef>CB_InstallCryptonicLeg</RecipeDef></descriptionHyperlinks>
+    <descriptionHyperlinks>
+      <RecipeDef>CB_InstallCryptonicLeg</RecipeDef>
+    </descriptionHyperlinks>
     <costList>
       <Plasteel>15</Plasteel>
       <ComponentSpacer>4</ComponentSpacer>
     </costList>
-    <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
     <statBases>
       <Mass>8</Mass>
     </statBases>
@@ -362,7 +387,9 @@
     <label>crypto spine</label>
     <labelNoun>a crypto spine</labelNoun>
     <description>An installed crypto spine.</description>
-    <descriptionHyperlinks><ThingDef>CB_CryptonicSpine</ThingDef></descriptionHyperlinks>
+    <descriptionHyperlinks>
+      <ThingDef>CB_CryptonicSpine</ThingDef>
+    </descriptionHyperlinks>
     <spawnThingOnRemoved>CB_CryptonicSpine</spawnThingOnRemoved>
     <addedPartProps>
       <solid>true</solid>
@@ -387,7 +414,9 @@
     <defName>CB_CryptonicSpine</defName>
     <label>crypto spine</label>
     <description>An advanced artificial spine. A biogel nerve bundle runs down an articulated plasteel core, surrounded by a lattice-dust healing system. It matches the performance of a biological spine.</description>
-    <descriptionHyperlinks><RecipeDef>CB_InstallCryptonicSpine</RecipeDef></descriptionHyperlinks>
+    <descriptionHyperlinks>
+      <RecipeDef>CB_InstallCryptonicSpine</RecipeDef>
+    </descriptionHyperlinks>
     <costList>
       <Plasteel>15</Plasteel>
       <ComponentSpacer>4</ComponentSpacer>
@@ -434,7 +463,9 @@
     <label>crypto core</label>
     <labelNoun>a crypto core</labelNoun>
     <description>An installed crypto core.</description>
-    <descriptionHyperlinks><ThingDef>CB_CryptonicHeart</ThingDef></descriptionHyperlinks>
+    <descriptionHyperlinks>
+      <ThingDef>CB_CryptonicHeart</ThingDef>
+    </descriptionHyperlinks>
     <spawnThingOnRemoved>CB_CryptonicHeart</spawnThingOnRemoved>
     <addedPartProps>
       <solid>true</solid>
@@ -467,7 +498,9 @@
     <defName>CB_CryptonicHeart</defName>
     <label>crypto core</label>
     <description>An advanced artificial heart. It has synthetic muscle fibers for a realistic heartbeat, plus a high-flow pump for rapid circulation during high stress. It is better than a biological heart in almost every way.</description>
-    <descriptionHyperlinks><RecipeDef>CB_InstallCryptonicHeart</RecipeDef></descriptionHyperlinks>
+    <descriptionHyperlinks>
+      <RecipeDef>CB_InstallCryptonicHeart</RecipeDef>
+    </descriptionHyperlinks>
     <costList>
       <Plasteel>15</Plasteel>
       <ComponentSpacer>4</ComponentSpacer>
@@ -511,7 +544,9 @@
     <label>crypto stomach</label>
     <labelNoun>a crypto stomach</labelNoun>
     <description>An installed crypto stomach.</description>
-    <descriptionHyperlinks><ThingDef>CB_CryptonicStomach</ThingDef></descriptionHyperlinks>
+    <descriptionHyperlinks>
+      <ThingDef>CB_CryptonicStomach</ThingDef>
+    </descriptionHyperlinks>
     <spawnThingOnRemoved>CB_CryptonicStomach</spawnThingOnRemoved>
     <addedPartProps>
       <solid>true</solid>
@@ -540,7 +575,9 @@
     <defName>CB_CryptonicStomach</defName>
     <label>crypto stomach</label>
     <description>An advanced artificial stomach. A set of sensors and chemical synthesizers efficiently digest nearly any energy-bearing foodstuff. An integrated lattice-dust healing system automatically repairs any damage caused by the powerful acids. It is better than a biological stomach in almost every way.</description>
-    <descriptionHyperlinks><RecipeDef>CB_InstallCryptonicStomach</RecipeDef></descriptionHyperlinks>
+    <descriptionHyperlinks>
+      <RecipeDef>CB_InstallCryptonicStomach</RecipeDef>
+    </descriptionHyperlinks>
     <costList>
       <Plasteel>10</Plasteel>
       <ComponentSpacer>3</ComponentSpacer>
@@ -579,7 +616,7 @@
     </appliedOnFixedBodyParts>
     <addsHediff>CB_CryptonicStomach</addsHediff>
   </RecipeDef>
-  
+
   <!-- Crypto lung -->
 
   <HediffDef ParentName="AddedBodyPartBase">
@@ -587,51 +624,53 @@
     <label>crypto lung</label>
     <labelNoun>a crypto lung</labelNoun>
     <description>An installed crypto lung.</description>
-    <descriptionHyperlinks><ThingDef>CB_CryptonicLung</ThingDef></descriptionHyperlinks>
+    <descriptionHyperlinks>
+      <ThingDef>CB_CryptonicLung</ThingDef>
+    </descriptionHyperlinks>
     <spawnThingOnRemoved>CB_CryptonicLung</spawnThingOnRemoved>
     <addedPartProps>
       <solid>true</solid>
       <partEfficiency>1.2</partEfficiency>
       <betterThanNatural>true</betterThanNatural>
     </addedPartProps>
-  <comps>
-    <li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
-      <verbs>
-        <li>
-          <verbClass>Verb_Shoot</verbClass>
-          <label>Crypto breath</label>
-          <hasStandardCommand>True</hasStandardCommand>
-          <defaultProjectile>CB_Bullet_FrostbreathProjectile</defaultProjectile>
-          <forcedMissRadius>1.9</forcedMissRadius>
-          <burstShotCount>9</burstShotCount>
-          <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
-          <warmupTime>1.5</warmupTime>
-          <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
-          <range>21.9</range>
-          <soundCast>InfernoCannon_Fire</soundCast>
-          <soundCastTail>GunTail_Heavy</soundCastTail>
-          <onlyManualCast>true</onlyManualCast>
-          <stopBurstWithoutLos>false</stopBurstWithoutLos>
-          <targetParams>
-            <canTargetLocations>true</canTargetLocations>
-          </targetParams>
-          <muzzleFlashScale>0</muzzleFlashScale>
-        </li>
-      </verbs>
-      <verbProps>
-        <li>
-          <label>Crypto breath</label>
-          <canBeToggled>true</canBeToggled>
-          <comps>
-            <li Class="MVCF.VerbComps.VerbCompProperties_Cooldown">
-              <compClass>MVCF.VerbComps.VerbComp_Cooldown</compClass>
-              <cooldownTime>120</cooldownTime>
-            </li>
-          </comps>
-        </li>
-      </verbProps>
-    </li>
-  </comps>
+    <comps>
+      <li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
+        <verbs>
+          <li>
+            <verbClass>Verb_Shoot</verbClass>
+            <label>Crypto breath</label>
+            <hasStandardCommand>True</hasStandardCommand>
+            <defaultProjectile>CB_Bullet_FrostbreathProjectile</defaultProjectile>
+            <forcedMissRadius>1.9</forcedMissRadius>
+            <burstShotCount>9</burstShotCount>
+            <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+            <warmupTime>1.5</warmupTime>
+            <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+            <range>21.9</range>
+            <soundCast>InfernoCannon_Fire</soundCast>
+            <soundCastTail>GunTail_Heavy</soundCastTail>
+            <onlyManualCast>true</onlyManualCast>
+            <stopBurstWithoutLos>false</stopBurstWithoutLos>
+            <targetParams>
+              <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+            <muzzleFlashScale>0</muzzleFlashScale>
+          </li>
+        </verbs>
+        <verbProps>
+          <li>
+            <label>Crypto breath</label>
+            <canBeToggled>true</canBeToggled>
+            <comps>
+              <li Class="MVCF.VerbComps.VerbCompProperties_Cooldown">
+                <compClass>MVCF.VerbComps.VerbComp_Cooldown</compClass>
+                <cooldownTime>120</cooldownTime>
+              </li>
+            </comps>
+          </li>
+        </verbProps>
+      </li>
+    </comps>
     <stages>
       <li>
         <statFactors>
@@ -651,7 +690,9 @@
     <defName>CB_CryptonicLung</defName>
     <label>crypto lung</label>
     <description>An advanced artificial ear implant. A collection of invisible subdermal microphones capture sound and transmit it to a biogel nerve interface that links directly with the auditory nerve. It's sensitive enough to hear a cat before you see it, can't be damaged by loud noise, and automatically tunes itself to pick out meaningful sounds in noisy environments.</description>
-    <descriptionHyperlinks><RecipeDef>CB_InstallCryptonicLung</RecipeDef></descriptionHyperlinks>
+    <descriptionHyperlinks>
+      <RecipeDef>CB_InstallCryptonicLung</RecipeDef>
+    </descriptionHyperlinks>
     <costList>
       <Plasteel>10</Plasteel>
       <ComponentSpacer>3</ComponentSpacer>
@@ -695,7 +736,9 @@
     <label>crypto exoskeleton</label>
     <labelNoun>a crypto exoskeleton</labelNoun>
     <description>An installed crypto exoskeleton.</description>
-    <descriptionHyperlinks><ThingDef>CB_CryptonicExoskeleton</ThingDef></descriptionHyperlinks>
+    <descriptionHyperlinks>
+      <ThingDef>CB_CryptonicExoskeleton</ThingDef>
+    </descriptionHyperlinks>
     <spawnThingOnRemoved>CB_CryptonicExoskeleton</spawnThingOnRemoved>
     <hediffClass>HediffWithComps</hediffClass>
     <stages>
@@ -758,8 +801,12 @@
     <defName>CB_CryptonicExoskeleton</defName>
     <label>crypto exoskeleton</label>
     <description>This bionic gland releases chemicals and nanomachines that toughen the skin and add flexible subdermal keratin plates at strategic points. This makes the user more resistant to damage across their whole body. Unfortunately, these changes make the skin appear leathery, with wrinkles across the whole body and face, which is generally considered ugly.</description>
-    <descriptionHyperlinks><RecipeDef>CB_InstallCryptonicExoskeleton</RecipeDef></descriptionHyperlinks>
-    <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+    <descriptionHyperlinks>
+      <RecipeDef>CB_InstallCryptonicExoskeleton</RecipeDef>
+    </descriptionHyperlinks>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
     <costList>
       <Plasteel>120</Plasteel>
       <ComponentSpacer>8</ComponentSpacer>
@@ -802,12 +849,14 @@
       <li>ExoskeletonSuit</li>
     </incompatibleWithHediffTags>
   </RecipeDef>
-  
+
   <RecipeDef ParentName="SurgeryRemoveImplantBase">
     <defName>CB_RemoveCryptonicExoskeleton</defName>
     <label>remove crypto exoskeleton</label>
     <description>Remove crypto exoskeleton.</description>
-    <descriptionHyperlinks><ThingDef>CB_CryptonicExoskeleton</ThingDef></descriptionHyperlinks>
+    <descriptionHyperlinks>
+      <ThingDef>CB_CryptonicExoskeleton</ThingDef>
+    </descriptionHyperlinks>
     <jobString>Removing crypto exoskeleton.</jobString>
     <removesHediff>CB_CryptonicExoskeleton</removesHediff>
   </RecipeDef>
