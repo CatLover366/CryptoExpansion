@@ -861,4 +861,90 @@
     <removesHediff>CB_CryptonicExoskeleton</removesHediff>
   </RecipeDef>
 
+  <!-- Cryptoskin -->
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>CB_CryptonicSkin</defName>
+    <label>cryptoskin</label>
+    <labelNoun>cryptoskin</labelNoun>
+    <description>An installed cryptoskin.</description>
+    <descriptionHyperlinks><ThingDef>CB_CryptonicSkin</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>CB_CryptonicSkin</spawnThingOnRemoved>
+    <hediffClass>HediffWithComps</hediffClass>
+    <stages>
+      <li>
+        <statFactors>
+          <IncomingDamageFactor>0.95</IncomingDamageFactor>
+        </statFactors>
+        <statOffsets>
+          <ComfyTemperatureMin>-25.0</ComfyTemperatureMin>
+          <ComfyTemperatureMax>25.0</ComfyTemperatureMax>
+          <ArmorRating_Heat>0.3</ArmorRating_Heat>
+          <GlobalLearningFactor>-0.02</GlobalLearningFactor>
+          <MoveSpeed>-0.05</MoveSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+    <tags>
+      <li>Skin</li>
+    </tags>
+  </HediffDef>
+
+  <ThingDef ParentName="CB_BodyPartCryptonicBase">
+    <defName>CB_CryptonicSkin</defName>
+    <label>cryptoskin</label>
+    <description>This bionic gland releases chemicals and nanomachines that toughen the skin and add flexible subdermal keratin plates at strategic points. This makes the user more resistant to damage across their whole body. Unfortunately, these changes make the skin appear leathery, with wrinkles across the whole body and face, which is generally considered ugly.</description>
+    <descriptionHyperlinks><RecipeDef>CB_InstallCryptonicSkin</RecipeDef></descriptionHyperlinks>
+    <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+    <costList>
+      <Plasteel>120</Plasteel>
+      <ComponentSpacer>8</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>SkinHardening</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>CB_InstallCryptonicSkin</defName>
+    <label>install cryptoskin</label>
+    <description>Install cryptoskin.</description>
+    <descriptionHyperlinks>
+      <ThingDef>CB_CryptonicSkin</ThingDef>
+      <HediffDef>CB_CryptonicSkin</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing cryptoskin.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CB_CryptonicSkin</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CB_CryptonicSkin</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>CB_CryptonicSkin</addsHediff>
+    <incompatibleWithHediffTags>
+      <li>Skin</li>
+    </incompatibleWithHediffTags>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>CB_RemoveCryptonicSkin</defName>
+    <label>remove cryptoskin</label>
+    <description>Remove cryptoskin.</description>
+    <descriptionHyperlinks><ThingDef>CB_CryptonicSkin</ThingDef></descriptionHyperlinks>
+    <jobString>Removing cryptoskin.</jobString>
+    <removesHediff>CB_CryptonicSkin</removesHediff>
+  </RecipeDef>
+
 </Defs>
