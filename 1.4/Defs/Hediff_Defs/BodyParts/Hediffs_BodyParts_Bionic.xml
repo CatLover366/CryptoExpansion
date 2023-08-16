@@ -274,10 +274,16 @@
       <betterThanNatural>true</betterThanNatural>
     </addedPartProps>
     <comps>
+      <li Class="CryptoExpansion.HediffCompProperties_JumpEntropy">
+        <compClass>CryptoExpansion.HediffComp_JumpEntropy</compClass>
+        <radius>5.0</radius>
+        <damType>Bomb</damType>
+        <excludeRadius>1.0</excludeRadius>
+      </li>
       <li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
         <verbs>
           <li>
-            <verbClass>Verb_Jump</verbClass>
+            <verbClass>CryptoExpansion.Verb_PowerJump</verbClass>
             <label>crypto jump</label>
             <violent>false</violent>
             <hasStandardCommand>true</hasStandardCommand>
