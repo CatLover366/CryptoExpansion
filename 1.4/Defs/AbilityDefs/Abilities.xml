@@ -110,7 +110,7 @@
         <defName>CB_CryptoFreeze</defName>
         <label>cryptothermia</label>
         <description>Blast a target with crypto energy, greatly slowing down the air molecules around them. This greatly decreases the temperature around the target, inflicting a deadly deep freeze that deals hypothermia damage over time as well as greatly reducing the target's physical capabilities.</description>
-        <iconPath>UI/Abilities/CB_Cryolize</iconPath>
+        <iconPath>UI/Abilities/CB_Frostbite</iconPath>
         <cooldownTicksRange>3000</cooldownTicksRange>
         <aiCanUse>true</aiCanUse>
         <warmupStartSound>CB_CryolizeFreeze</warmupStartSound>
