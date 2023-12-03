@@ -369,6 +369,7 @@
         <li>
           <verbClass>CryptoExpansion.Verb_PowerJump</verbClass>
           <label>crypto jump</label>
+          <commandIcon>UI/Abilities/CB_ColdRush</commandIcon>
           <violent>false</violent>
           <hasStandardCommand>true</hasStandardCommand>
           <onlyManualCast>True</onlyManualCast>
