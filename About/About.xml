@@ -6,7 +6,15 @@
   <supportedVersions>
     <li>1.4</li>
   </supportedVersions>
-  <description>Frost/crypto themed bionics, for especially chilly characters.</description>
+  <description>Frost/crypto themed bionics, for especially cool characters.
+
+Credits:
+* Feldoh, Zomuro, and MrKociak for the C#
+* Elseud for the ability UI sprites
+* CatLover366 for XML, writing, and sound
+* ShielD for the bionic sprites and sound
+* Endrian for the great thumbnail art
+* Sir Van for the thumbnail font</description>
   <modDependencies>
     <li>
       <packageId>Smartkar.AthenaFramework</packageId>
