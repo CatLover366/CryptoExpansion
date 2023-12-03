@@ -40,7 +40,7 @@
       <skillRequirements>
         <Crafting>10</Crafting>
       </skillRequirements>
-      <researchPrerequisite>Bionics</researchPrerequisite>
+      <researchPrerequisite>CB_CryptoBionics</researchPrerequisite>
       <recipeUsers>
         <li>FabricationBench</li>
       </recipeUsers>
@@ -563,7 +563,7 @@
           <ArmorRating_Heat>0.2</ArmorRating_Heat>
           <ComfyTemperatureMin>-5.0</ComfyTemperatureMin>
           <GlobalLearningFactor>-0.02</GlobalLearningFactor>
-          <MoveSpeed>-0.05</MoveSpeed>
+          <MoveSpeed>-0.1</MoveSpeed>
         </statOffsets>
       </li>
     </stages>
@@ -797,7 +797,7 @@
       <ComponentSpacer>10</ComponentSpacer>
     </costList>
     <recipeMaker>
-      <researchPrerequisite>SkinHardening</researchPrerequisite>
+      <researchPrerequisite>CB_CryptoBionics</researchPrerequisite>
     </recipeMaker>
   </ThingDef>
 
@@ -857,7 +857,7 @@
     <stages>
       <li>
         <statFactors>
-          <IncomingDamageFactor>0.95</IncomingDamageFactor>
+          <IncomingDamageFactor>0.98</IncomingDamageFactor>
         </statFactors>
         <statOffsets>
           <ComfyTemperatureMin>-30.0</ComfyTemperatureMin>
@@ -884,7 +884,7 @@
       <ComponentSpacer>8</ComponentSpacer>
     </costList>
     <recipeMaker>
-      <researchPrerequisite>SkinHardening</researchPrerequisite>
+      <researchPrerequisite>CB_CryptoBionics</researchPrerequisite>
     </recipeMaker>
   </ThingDef>
 
