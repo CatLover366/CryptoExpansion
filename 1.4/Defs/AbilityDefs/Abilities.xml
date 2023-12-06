@@ -120,7 +120,7 @@
     </statBases>
         <verbProperties>
             <verbClass>Verb_CastAbility</verbClass>
-            <range>8.5</range>
+            <range>28.5</range>
             <warmupTime>1.5</warmupTime>
             <targetParams>
         <canTargetSelf>False</canTargetSelf>
