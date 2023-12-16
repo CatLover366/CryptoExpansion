@@ -391,6 +391,7 @@
         <li>
           <label>crypto jump</label>
           <canBeToggled>true</canBeToggled>
+          <brawlerCaresAbout>false</brawlerCaresAbout>
           <comps>
             <li Class="MVCF.VerbComps.VerbCompProperties_Cooldown">
               <compClass>MVCF.VerbComps.VerbComp_Cooldown</compClass>
@@ -653,6 +654,7 @@
         <li>
           <label>Crypto breath</label>
           <canBeToggled>true</canBeToggled>
+          <brawlerCaresAbout>false</brawlerCaresAbout>
           <comps>
             <li Class="MVCF.VerbComps.VerbCompProperties_Cooldown">
               <compClass>MVCF.VerbComps.VerbComp_Cooldown</compClass>
