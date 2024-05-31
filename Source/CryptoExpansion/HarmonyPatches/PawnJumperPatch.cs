@@ -5,11 +5,11 @@ using Verse;
 
 namespace CryptoExpansion.HarmonyPatches;
 
-[HarmonyPatch(typeof(PawnJumper), "LandingEffects")]
+[HarmonyPatch(typeof(PawnFlyer), "LandingEffects")]
 public static class PawnJumperPatch
 {
   [HarmonyPostfix]
-  public static void Postfix(PawnJumper __instance)
+  public static void Postfix(PawnFlyer __instance)
   {
     Pawn pawn = __instance.FlyingPawn;
     if (pawn.health?.hediffSet?.GetAllComps()?.Where(c => c is HediffComp_JumpEntropy { jumping: true }).FirstOrDefault() is not HediffComp_JumpEntropy comp)
